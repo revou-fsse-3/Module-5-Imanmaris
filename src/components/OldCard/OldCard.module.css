@@ -1,0 +1,34 @@
+.cardContainer {
+    padding: 15px;
+    border: 1px solid steelblue;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
+.justifyLeft {
+    justify-content: start;
+}
+
+.justifyRight {
+    justify-content: right;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.displayBlock {
+    display: block;
+}
+
+.flexDirectionRow {
+    flex-direction: row;
+}
+
+.flexDirectionColumn {
+    flex-direction: column;
+}
