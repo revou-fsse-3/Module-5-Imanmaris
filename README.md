@@ -1,3 +1,5 @@
+Deploy project with netlify [this project](https://65ac853493d77d079aeafe35--dapper-kataifi-c503b0.netlify.app/)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
