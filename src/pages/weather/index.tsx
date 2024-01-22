@@ -1,5 +1,5 @@
 import Layout from "@/layouts";
-import { Card } from "@/components";
+import { OldCard } from "@/components";
 import axios from 'axios';
 import search_icon from '../../components/Assets/search.png';
 import suhu_max from '../../components/Assets/suhumax.png';
@@ -85,19 +85,19 @@ const Weather = ({ data, setData }: { data: AppData[]; setData: React.Dispatch<R
   return (
     <main className={`bg-sky-50/[.9] rounded-b-xl flex min-h-screen flex-col items-center justify-center`}>
       <Layout>
-        <Card>
-          <section className="w-full pt-10 backdrop-blur-xl bg-sky-100/[.9] text-black flex flex-row justify-center gap-1">
+        <OldCard direction="column">
+          <section className="w-full p-5 backdrop-blur-xl bg-sky-100/[.9] text-black flex flex-row justify-center item-center">
             <input
               type="text"
-              className="cityInput pl-2"
+              className="cityInput rounded-l-2xl pl-3 pt-2 pb-2"
               placeholder="Search Location"
               ref={searchRef} />
-            <div className="search-icon" onClick={onSearch}>
+            <div className="search-icon bg-sky-50/[.9] rounded-r-2xl pl-2 pr-2 pt-2 pb-2" onClick={onSearch}>
               <Image className="h-7 w-7" src={search_icon} alt="search logo" />
             </div>
           </section>
 
-          <section className='backdrop-blur-xl bg-sky-100/[.9] rounded-xl p-10'>
+          <section className='backdrop-blur-xl bg-sky-100/[.9] rounded-b-xl p-10'>
             {data.map((item, index) => (
               <section key={index} className="flex flex-wrap flex-col items-center">
                 <h2 className='font-bold text-xl text-slate-500'>{item.location.country}</h2>
@@ -110,16 +110,28 @@ const Weather = ({ data, setData }: { data: AppData[]; setData: React.Dispatch<R
                 />
                 <p className="description">{item.current.condition.text}</p>
 
-                <div className='flex gap-7 justify-center items-center mt-4'>
-                  <p className='flex justify-center items-center'><Image className='h-8 w-auto' src={suhu_max} alt="logo suhu udara" /> {item.current.temp_c}°C</p>
-                  <p className='flex justify-center items-center'><Image className='h-8 w-auto' src={humidity_icon} alt="logo kelembaban udara" />{item.current.humidity}%</p>
-                  <p className='flex justify-center items-center'><Image className='h-8 w-auto' src={angin_icon} alt="logo kecepatan udara" />{item.current.wind_mph} m/s</p>
-                </div>
+                <section className='flex flex-row gap-1 justify-center items-center mt-10'>
+                  <div className='flex flex-col gap-2 p-2 justify-center items-center '>
+                    <p className='flex flex-col justify-center text-2xl items-center'><Image className='h-8 w-auto' src={suhu_max} alt="logo suhu udara" /> {item.current.temp_c} °C</p>
+                    <p className='flex justify-center items-center'> {'Temperature °C'}</p>
+                  </div>
+
+                  <div className='flex flex-col gap-2 p-2 justify-center items-center'>
+                    <p className='flex flex-col justify-center text-2xl items-center'><Image className='h-8 w-auto' src={humidity_icon} alt="logo kelembaban udara" />{item.current.humidity} %</p>
+                    <p className='flex justify-center items-center'>{'Kelembapan %'}</p>
+                  </div>
+
+                  <div className='flex flex-col gap-2 p-2 justify-center items-center'>
+                    <p className='flex flex-col justify-center text-2xl items-center'><Image className='h-8 w-auto' src={angin_icon} alt="logo kecepatan udara" />{item.current.wind_mph} m/s</p>
+                    <p className='flex justify-center items-center'>{'Laju Angin m/s'}</p>
+                  </div>
+                </section>
+
               </section>
             ))}
           </section>
 
-        </Card>
+        </OldCard>
       </Layout>
     </main>
   );

@@ -1,6 +1,6 @@
 
 import Layout from "@/layouts";
-import { Card } from "@/components";
+import { OldCard } from "@/components";
 import DateUpdate from "@/components/Assets/DateUpdate";
 import {useFormik} from "formik";
 import * as yup from"yup";
@@ -50,7 +50,7 @@ const Register = () => {
             console.log('Silahkan anda sudah login');
     
             // Navigate to the desired route upon successful login
-            router.push('/weather');
+            router.push('/weather/weatherfinder');
             
             resetForm();
 
@@ -77,9 +77,9 @@ const Register = () => {
                 <DateUpdate />
               </div>
     
-              <Card>
+              <section className="w-full p-5 text-2xl bg-sky-50/[.9] text-black flex flex-col justify-center rounded-md">
                 <form onSubmit={forMik.handleSubmit}>
-                  <div className="w-full p-5 text-2xl bg-sky-100/[.9] text-black flex flex-col justify-center rounded-md">
+                  <div className="w-full p-5 text-2xl bg-sky-100/[.9] text-black flex flex-col justify-center rounded-t-md">
                     <label>Email</label>
                     <input
                       className="border-solid border-2 border-sky-500 py-1"
@@ -93,10 +93,10 @@ const Register = () => {
                     )}
                   </div>
     
-                  <div className="w-full p-5 text-2xl bg-sky-100/[.9] text-black flex flex-col justify-center rounded-md">
+                  <div className="w-full p-5 text-2xl bg-sky-100/[.9] text-black flex flex-col justify-center rounded-b-md">
                     <label>Password</label>
                     <input
-                      type="password"
+                      type="password" 
                       className="border-solid border-2 border-sky-500 py-1"
                       name="password"
                       value={forMik.values.password}
@@ -122,7 +122,7 @@ const Register = () => {
                   </section>
 
                 </form>
-              </Card>
+              </section>
             </section>
           </Layout>
         </main>

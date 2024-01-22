@@ -34,7 +34,7 @@ const Navbar = () => {
                     <div className="flex space-x-4">
                         <Link passHref href={'/'} className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">{'Home'}</Link>
                         <Link passHref href={'/weather/register'} className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">{'Registrasi'}</Link>
-                        <Link passHref href={'/weather'} className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">{'Weather Finder'}</Link>
+                        <Link passHref href={'/weather/weatherfinder'} className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">{'Weather Finder'}</Link>
                         <Link passHref href={'/post/percobaan'} className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">{'Pokemon List'}</Link>
                     </div>
                     </div>

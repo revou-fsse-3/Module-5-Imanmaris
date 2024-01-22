@@ -1,4 +1,3 @@
-import { OldCard } from "@/components";
 import { useEffect, useState } from "react";
 
 interface ForecastDay {
@@ -42,7 +41,7 @@ const Post = ()=>{
     <main
       className={`flex min-h-screen flex-col items-center justify-center p-24`}
     >
-      <OldCard direction="column">
+      <div>
         <h2 className="text-lg font-bold">
             {'Halaman Post dengan Client Side Fetch '}            
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
@@ -51,13 +50,10 @@ const Post = ()=>{
         </h2>
 
         {post.map((post, index) => (
-            <OldCard key={index} direction="row" justifyContent="center">
-                <p key={index}>{post.title}</p>
-            </OldCard>
-            
+            <p key={index}>{post.title}</p>
         ))}
 
-      </OldCard>
+      </div>
 
     </main>
     )

@@ -1,8 +1,6 @@
-Deploy project with 
-<!-- - netlify [this project](https://dapper-kataifi-c503b0.netlify.app/) -->
-- vercel [this project](https://materi-week12.vercel.app/)
-
-
+# Assignment W-12 Module-5
+---
+#
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -43,3 +41,26 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+**Result custom domain with DNS**
+
+|       Tool     | Tool Website | My Link Website with Custom Domain |
+|----------------|--------------|------------------------------------|
+|<img width="55%" img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs-Hv0e4yjUMrdEx8AciPLT_7FO73Bfia6zZowOv3-jw&s">|[Vercel](https://vercel.com/)|[https://materi-week12.vercel.app/](https://materi-week12.vercel.app/)|
+<img width="55%" img src="https://searchvectorlogo.com/wp-content/uploads/2023/06/netlify-logo-vector-2023.png">|[Netlify](https://netlify.com/)|[https://dapper-kataifi-c503b0.netlify.app/](https://dapper-kataifi-c503b0.netlify.app/)|
+
+
+
+
+
+<br>
+
+
+<h5 align="center">last created on January 22, 2024</h5>
+
+
+---
+
+
+<p align="center"></p>
+<p align="center"><i>copyright &copy; 2023-2024</i></p>
