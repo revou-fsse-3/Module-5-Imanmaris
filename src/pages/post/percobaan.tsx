@@ -1,10 +1,6 @@
-import { Card, OldCard } from "@/components";
+import { OldCard } from "@/components";
 import Layout from "@/layouts";
 
-interface Post {
-    title: string;
-  }
-  
   interface Resulted {
     name: string;
     url:string;
@@ -15,7 +11,6 @@ interface Post {
   }
   
   interface Props {
-    posts: Post[];
     results: ListPokemon;
   }
   

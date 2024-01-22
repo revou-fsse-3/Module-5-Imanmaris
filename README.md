@@ -1,4 +1,7 @@
-Deploy project with netlify [this project](https://dapper-kataifi-c503b0.netlify.app/)
+Deploy project with 
+<!-- - netlify [this project](https://dapper-kataifi-c503b0.netlify.app/) -->
+- vercel [this project](https://materi-week12.vercel.app/)
+
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
