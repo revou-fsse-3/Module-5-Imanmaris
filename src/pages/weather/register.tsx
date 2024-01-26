@@ -6,6 +6,7 @@ import {useFormik} from "formik";
 import * as yup from"yup";
 import {useRouter} from "next/router";
 import Link from "next/link";
+import Button from "@/components/Button";
 // import Link from "next/link";
 
 // Define an interface for the form data
@@ -107,8 +108,6 @@ const Register = () => {
                       <div className="text-red-500">{forMik.errors.password}</div>
                     )}
                   </div>
-    
-
 
                   <section className={'flex flex-wrap flex-col items-center mt-2'}>
                   <button

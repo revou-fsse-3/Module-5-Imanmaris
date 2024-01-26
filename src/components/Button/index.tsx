@@ -4,7 +4,7 @@ interface Props {
     label: string;
     className?: string;
     onClick: () => void;
-    variant: 'primary' | 'second';
+    variant?: 'primary' | 'second';
 
 }
 

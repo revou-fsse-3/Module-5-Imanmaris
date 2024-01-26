@@ -1,29 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Unit Test for Text Component component should be return text 1`] = `
-<p>
-  testing text
-</p>
-`;
-
-exports[`Unit Test for Text Component component should have a classname 1`] = `
+exports[`Unit Test for Button Component Button render correctly 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <p
-        class="testing-className"
+      <button
+        class="undefined text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
       >
-        testing unit
-      </p>
+        Button testing
+      </button>
     </div>
   </body>,
   "container": <div>
-    <p
-      class="testing-className"
+    <button
+      class="undefined text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
     >
-      testing unit
-    </p>
+      Button testing
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
