@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppProvider unit testing AppProvider should be return correct value 1`] = `
+<button>
+  New Location
+</button>
+`;
+
+exports[`AppProvider unit testing AppProvider should be return correct value 2`] = `
+<p>
+  Date: 27-01-2024
+</p>
+`;
+
+exports[`AppProvider unit testing AppProvider should be return correct value 3`] = `
+<p>
+  Date Epoch: 27012024
+</p>
+`;

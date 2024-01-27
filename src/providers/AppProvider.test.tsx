@@ -22,8 +22,9 @@ describe('AppProvider unit testing', () => {
             return (
                 <>
                     <div>
-                        <p>{`Name: ${forecast?.date}`}</p>
-                        <button onClick={getUserData}>New User</button>
+                        <p>{`Date: ${forecast?.date}`}</p>
+                        <p>{`Date Epoch: ${forecast?.date_epoch}`}</p>
+                        <button onClick={getUserData}>New Location</button>
                     </div>  
                 </>
             )
@@ -35,10 +36,10 @@ describe('AppProvider unit testing', () => {
             </AppProvider>
         )
 
-      expect(screen.getByText('New User')).toBeDefined();
+      expect(screen.getByText('New Location')).toMatchSnapshot();
       await waitFor (() => fireEvent.click(screen.getByRole('button')))
-      expect(screen.getByText(`Name: ${dummyUser.date}`)).toBeDefined();
-
+      expect(screen.getByText(`Date: ${dummyUser.date}`)).toMatchSnapshot();
+      expect(screen.getByText(`Date Epoch: ${dummyUser.date_epoch}`)).toMatchSnapshot();    
     });
   
 });
