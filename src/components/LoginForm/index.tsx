@@ -39,10 +39,10 @@ const LoginForm = ({onSubmit}: Props) => {
                             type="email"
                             {...register("email", {
                             required: true,
-                            pattern: {
-                                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                                message: "invalid email address"
-                            }
+                            // pattern: {
+                            //     value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                            //     message: "invalid email address"
+                            // }
                             })}
                             placeholder="email"
                         />
@@ -52,7 +52,7 @@ const LoginForm = ({onSubmit}: Props) => {
                         <Text>{'Username'}</Text>
                         <input
                             {...register("username", {
-                            validate: data => data !== "admin" || "Nice try!"
+                            required: true,
                             })}
                             placeholder="username"
                         />
@@ -64,16 +64,16 @@ const LoginForm = ({onSubmit}: Props) => {
                             type="password"
                             {...register("password", {
                             required: true,
-                            pattern: {
-                                value: /^[A-Z0-9._%+-]+[A-Z]{2,}$/i,
-                                message: "invalid password"
-                            }
+                            // pattern: {
+                            //     value: /^[A-Z0-9._%+-]+[A-Z]{2,}$/i,
+                            //     message: "invalid password"
+                            // }
                             })}
                             placeholder="password"
                         /> 
                     </Card>
                                 
-                    <button type="submit">Submit</button>
+                    <button type="submit">{'Submit'}</button>
                 </form>
             </Card>
 

@@ -1,5 +1,5 @@
 
-import { ReactNode, createContext, useState } from "react";
+import { ReactNode, createContext, useContext, useState } from "react";
 
 interface Forecast {
     date: string;
@@ -30,6 +30,16 @@ const AppProvider = ({children}: Props) => {
             {children}
         </AppContext.Provider>
     )
+}
+
+export const useUser = () => {
+
+    const context = useContext (AppContext);
+    
+    if(!context) {
+        throw new Error ('useUser Must be used within a AppProvider')
+    }
+    return context;
 }
 
 export default AppProvider
