@@ -39,7 +39,7 @@ describe ('Login Form Unit Testing', () => {
 
         await waitFor(() => expect(mockSubmit).toHaveBeenCalled());
 
-        expect(mockSubmit).toHaveBeenNthCalledWith(1,{
+        expect(mockSubmit).toHaveBeenCalledWith({
             email: 'marisiman99@gmail.com',
             username: 'imanmaris',
             password: '1234567890'

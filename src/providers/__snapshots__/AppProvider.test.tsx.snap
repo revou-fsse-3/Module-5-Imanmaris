@@ -17,3 +17,9 @@ exports[`AppProvider unit testing AppProvider should be return correct value 3`]
   Date Epoch: 27012024
 </p>
 `;
+
+exports[`AppProvider unit testing AppProvider should be return correct value 4`] = `
+<p>
+  Country: indonesia
+</p>
+`;

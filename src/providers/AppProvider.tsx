@@ -4,6 +4,7 @@ import { ReactNode, createContext, useContext, useState } from "react";
 interface Forecast {
     date: string;
     date_epoch:number;
+    country: string;
 }
 
 interface Props {
